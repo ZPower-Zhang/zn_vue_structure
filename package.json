@@ -1,0 +1,43 @@
+{
+  "name": "zn_vue_structure",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack-dev-server --line --progress --config build/webpack.dev.config.js",
+    "start": "npm run dev",
+    "build": "node build/build.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^9.5.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.0.5",
+    "babel-polyfill": "^6.26.0",
+    "chalk": "^2.4.2",
+    "clean-webpack-plugin": "^2.0.1",
+    "copy-webpack-plugin": "^5.0.2",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "file-loader": "^3.0.1",
+    "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^0.5.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.1",
+    "ora": "^3.2.0",
+    "rimraf": "^2.6.3",
+    "semver": "^6.0.0",
+    "shelljs": "^0.8.3",
+    "typescript": "^3.3.4000",
+    "url-loader": "^1.1.2",
+    "vue-loader": "^15.7.0",
+    "webpack": "^4.29.6",
+    "webpack-bundle-analyzer": "^3.1.0",
+    "webpack-dev-server": "^3.2.1",
+    "webpack-merge": "^4.2.1"
+  },
+  "engines": {
+    "node": ">= 6.0.0",
+    "npm": ">= 3.0.0"
+  }
+}
