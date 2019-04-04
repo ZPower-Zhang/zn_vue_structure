@@ -14,6 +14,19 @@ const CleanWebpackPlugin = require('clean-webpacl-plugin')
 
 const webpack = merge(baseWebpackConfig, {
   module: {
-    
+    rules: [
+
+    ]
+  },
+  plugins: [
+
+    //用于在构建前清除dist目录中的内容
+    new CleanWebpackPlugin(['dist'], {
+      root: path.resolve(__dirname, '../'), // 根目录
+      verbose: true, // 开启在控制台输出信息
+    })
+  ],
+  resolve: {
+    // 设置解析的扩展
   }
 })
